@@ -12,6 +12,10 @@ jobs:
       - name: pip3 list
         run: pip3 list
 
+
+      - name: pip3 install setuptools
+        run: pip3 install setuptools
+
       - name: pip3 install yq
         run: pip3 install yq
 
