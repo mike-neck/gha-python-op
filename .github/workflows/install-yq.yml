@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: pip3 list
+        run: pip3 list
+
       - name: pip3 install yq
         run: pip3 install yq
 
