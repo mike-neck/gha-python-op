@@ -19,5 +19,8 @@ jobs:
       - name: pip3 install yq
         run: pip3 install yq
 
-      - name: show
-        run: which yq
+      - name: show installed yq
+        run: yq --version
+
+      - name: test yq
+        run: echo '{"name":"foo","items":[{"name":"bar"},{"name":"baz"}]}' | yq -y '.'
